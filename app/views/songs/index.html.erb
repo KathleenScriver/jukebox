@@ -1,0 +1,18 @@
+<h1 class='title'>All Songs</h1>
+
+<div class='container'>
+
+      <% @songs.each do |song| %>
+      <div class='row align-items-start'>
+
+      <!-- <div class='box'> -->
+        <ul class='box'>
+          <li><img src="http://placekitten.com/200/300" alt="cute kitty"></li>
+          <li>Title: <%= song.title %></li>
+          <li>Play Count: <%= song.play_count %></li>
+        </ul>
+      </div>
+      <!-- </div> -->
+      <% end %>
+  </div>
+</div>
